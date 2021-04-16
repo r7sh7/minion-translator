@@ -1,8 +1,8 @@
 var btnTranslate = document.querySelector('#btn-translate')
 var inputText = document.querySelector('#text-input')
 var outputText = document.querySelector('#output')
-var url = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
-
+// var url = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
+var url = "https://api.funtranslations.com/translate/minion.json"
 //inputText gives an object -[object HTMLTextAreaElement]
 
 function errorHandler(error) {
