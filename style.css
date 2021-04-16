@@ -1,17 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 :root{
     --primary-color: #FCD34D;
-    --medium-grey: #D1D5DB;
+    --dark-grey: #374151;
 }
 
 body{
-    font-family:'Roboto', sans-serif; ;
+    font-family: 'Kalam', cursive;
 }
 
 hr{
     margin: 3rem 0rem;
+}
+
+h1{
+    color: var(--dark-grey);
 }
 
 textarea{
@@ -27,8 +31,15 @@ textarea{
     font-size: 1.5rem;
     text-align: center;
     padding: 1rem 0rem;
-    background-color: var(--medium-grey);
+    background-color: var(--primary-color);
 }
+
+footer{
+    text-align: center;
+    margin-top: 100rem;
+    background-color: var(--primary-color);
+}
+
 
 .container{
     max-width: 800px;
