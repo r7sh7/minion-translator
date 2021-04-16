@@ -15,7 +15,7 @@ function clickHandler() {
 
     // outputText.innerText = "Translation: "+ inputText.value 
 
-    var serverURL = url + "?" + "text=" + inputText.value
+    var serverURL = url + "?" + "text=" + inputText.value //input
 
     //calling server for processing
     fetch(serverURL)
@@ -23,10 +23,13 @@ function clickHandler() {
         .then((json) => {
             // console.log(json.contents.translated)
             var translatedText = json.contents.translated;
-            outputText.innerText = translatedText
+            outputText.innerText = translatedText //output
         })
         .catch(errorHandler)
-    //alternatively - .catch((error) =>console.log('error occured', error))
+    // alternatively - .catch((error) => {
+    //     console.log('error occured', error)
+    //     alert('Server down. Try again later!')
+    // })
 };
 
 btnTranslate.addEventListener("click", clickHandler);
