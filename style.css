@@ -3,12 +3,12 @@
 
 :root{
     --primary-color: #FCD34D;
-    --medium-grey: #9CA3AF;
+    --medium-grey: #D1D5DB;
 }
 
 body{
     font-family:'Roboto', sans-serif; ;
-    margin: 0px;
+    margin: 3rem 20rem;
 }
 
 hr{
@@ -31,16 +31,37 @@ hr{
     margin: 0px;
     border: solid black 1px;
     height: 3rem;
-}
-
-.list-non-bullet{
-    list-style: none;
-    margin-top: 0.5rem;
-}
-
-.list-item-inline{
-    display: inline;
-    padding: 0rem 5.5rem;
+    display: flex;
+    justify-content: space-between;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.container-item{
+    padding: 1rem;
+}
+
+.container-textbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea{
+    font-size: larger;
+    padding: 1rem;
+    display: inline;
+    width: 43vh;
+    height: 20vh;
+    margin: 0px;
+}
+
+.btn{
+    border: 1px solid black;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 20%;
+    font-size: large;
+    font-weight: bold;
+    background-color: var(--medium-grey);
+    border-radius: 00.5rem;
 }
