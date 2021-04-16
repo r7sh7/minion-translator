@@ -1,9 +1,32 @@
 var btnTranslate = document.querySelector('#btn-translate')
 var inputText = document.querySelector('#text-input')
 var outputText = document.querySelector('#output')
+var url = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
+
+//inputText gives an object -[object HTMLTextAreaElement]
+
+function errorHandler(error) {
+    console.log('error occured', error)
+    alert('Server down. Try again later!')
+}
+
+
+function clickHandler() {
+
+    // outputText.innerText = "Translation: "+ inputText.value 
+
+    var serverURL = url + "?" + "text=" + inputText.value
+
+    //calling server for processing
+    fetch(serverURL)
+        .then((promise) => promise.json())
+        .then((json) => {
+            // console.log(json.contents.translated)
+            var translatedText = json.contents.translated;
+            outputText.innerText = translatedText
+        })
+        .catch(errorHandler)
+    //alternatively - .catch((error) =>console.log('error occured', error))
+};
 
 btnTranslate.addEventListener("click", clickHandler);
-
-function clickHandler(){
-    outputText.innerText = inputText.value 
-}
