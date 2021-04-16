@@ -26,20 +26,21 @@ textarea{
     border: none;
     font-size: larger;
     outline: none;
+    font-family: 'Kalam', cursive;
     
 }
 
 header{
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
     padding: 1rem 0rem;
     background-color: var(--primary-color);
 }
 
-footer{
+.footer{
     padding: 1.5rem;
     width: 100%;
-    position: fixed;
+    height: 10rem;
     text-align: center;
     background-color: var(--primary-color);
     bottom: 0px;
@@ -57,6 +58,8 @@ footer p{
 .container{
     max-width: 800px;
     margin: auto;
+    margin-bottom: 7rem;
+
 }
 
 .container .container-header{
@@ -101,11 +104,12 @@ footer p{
 
 
 .btn{
+    font-size: medium;
     border: 1px solid black;
     margin-top: 1rem;
     padding: 0.5rem;
-    width: 20%;
-    font-size: large;
+    width: 12rem;
+    height: 3rem;
     font-weight: bold;
     background-color: var(--primary-color);
     color: var(--dark-grey);
